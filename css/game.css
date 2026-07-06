@@ -1,0 +1,33 @@
+body {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+#game-area {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#catch-me {
+    padding: 20px 40px;
+    font-size: 20px;
+    background: linear-gradient(45deg, #ff4500, #ff8c00);
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute; /* מאפשר לו לזוז בחופשיות */
+    border-radius: 50px;
+    box-shadow: 0 0 20px #ff4500;
+    transition: 0.2s;
+}
+
+#catch-me:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px #ff4500;
+}
